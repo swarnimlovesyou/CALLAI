@@ -31,7 +31,7 @@ SECRET_KEY = os.getenv('SECRET_KEY', 'django-insecure-d7x)u$lxzhjjkk-gtddw(vhht*
 DEBUG = os.getenv('DEBUG', 'False').lower() == 'true'
 
 # Get host names from environment variable
-ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', '').split(',')
+ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', '').split(',') + ['iwantomeetyomadre.onrender.com']
 
 # CORS settings for development
 CORS_ALLOW_ALL_ORIGINS = True if DEBUG else False
